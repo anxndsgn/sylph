@@ -4,16 +4,15 @@ import { OpenGraph } from "@/lib/og";
 
 import React from "react";
 
-const category = "examples";
-
 export function generateMetadata() {
-  const image = `${process.env.NEXT_PUBLIC_SITE_URL}api/og?title=${encodeURIComponent(category)}`;
+  const title = "Software";
+  const image = `${process.env.NEXT_PUBLIC_SITE_URL}api/og?title=${encodeURIComponent(title)}`;
 
   return {
     ...OpenGraph,
-    category,
+    title,
     openGraph: {
-      category,
+      title,
       images: [image],
     },
     twitter: {
@@ -26,7 +25,7 @@ export default function Page() {
   return (
     <React.Fragment>
       <FadeIn.Item>
-        <Posts category={category} />
+        <Posts category="sofware" />
       </FadeIn.Item>
     </React.Fragment>
   );

@@ -66,20 +66,23 @@
   html {
     @apply text-default text-foreground bg-background;
 
-    h1,
+    h1 {
+      @apply font-bold text-xl;
+    }
+
     h2,
     h3,
     h4,
     h5,
     h6 {
-      @apply font-medium;
+      @apply font-bold text-lg;
     }
 
     h2,
     h3,
     sub,
     sup {
-      @apply text-muted;
+      @apply font-semibold text-lg;
     }
 
     sub {
