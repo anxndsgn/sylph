@@ -22,8 +22,14 @@ export default function About() {
     <AnimatePresence>
       <div className="flex justify-between">
         <div>
-          <h1>ANXNDSGN</h1>
-          <h2 className={`${ebGaramond.className}`}>UX/UI Designer.</h2>
+          <h1>ANXNDSGN | 鑫</h1>
+          <h2 className={`text-muted font-normal`}>
+            UX/UI 设计师。 杭州，中国。
+          </h2>
+          <div className="flex gap-2 text-muted font-normal mt-1">
+            <a href="mailto:anxanxx@gmail.com">E-mail</a>
+            <a href="https://x.com/anxndsgn">Twitter</a>
+          </div>
         </div>
       </div>
 

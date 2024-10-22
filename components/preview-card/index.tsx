@@ -32,7 +32,7 @@ export default function PreviewList({
       <p className="mt-0 text-muted">{date}</p>
       {hovered &&
         createPortal(
-          <div className="absolute top-32 right-10 z-10 flex hidden w-96 flex-col gap-2 rounded-xl border border-border bg-background p-4 md:block ">
+          <div className="fixed top-10 right-10 z-10 md:flex hidden w-96 flex-col gap-2 rounded-xl border border-border bg-background p-4 ">
             {image && (
               <Image
                 src={image || ""}
@@ -49,7 +49,7 @@ export default function PreviewList({
           document.body,
         )}
       {/* {hovered && (
-        <div className="absolute top-10 right-12 z-10 flex w-96 flex-col gap-2 rounded-xl border border-border bg-background p-4">
+        <div className="fixed top-10 -right-1/2 z-50 flex w-96 flex-col gap-2 rounded-xl border border-border bg-background p-4">
           {image && (
             <Image
               src={image || ""}
