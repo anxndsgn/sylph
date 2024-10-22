@@ -78,11 +78,11 @@
       @apply font-bold text-lg;
     }
 
-    h2,
     h3,
+    h4,
     sub,
     sup {
-      @apply font-semibold text-lg;
+      @apply font-semibold text-base text-muted;
     }
 
     sub {

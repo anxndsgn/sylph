@@ -1,6 +1,6 @@
 ---
 title: "Works at Zeabur"
-summary: "一些在 Zeabur 完成的工作。"
+summary: "在 Zeabur，我的工作涵盖了设计系统的建设与维护、用户体验设计（UX/UI）以及品牌宣传物料设计等方面。"
 time:
   created: "2024-09-18T19:24:46.167Z"
   updated: "2024-10-17T09:56:06.854Z"
@@ -12,7 +12,8 @@ media:
 > 
 > Zeabur revolutionizes PaaS (Platform-as-a-Service), enabling developers to deploy services effortlessly. Our platform supports any programming language or framework. Say goodbye to deployment hassles. With Zeabur, bring your coding genius to life swiftly and smoothly.
 
-在 Zeabur，我的工作涵盖了设计系统的建设与维护、用户体验设计（UX/UI）以及品牌宣传物料设计等方面。我还参与了一些前端开发相关的调整工作，确保设计与技术无缝对接。以下是我具体负责的项目及工作内容。
+
+在 Zeabur，我的工作涵盖了设计系统的建设与维护、用户体验设计（UX/UI）以及品牌宣传物料设计等方面。我还参与了一些前端开发相关的调整工作，确保设计与技术无缝对接。
 
 # 设计系统
 
@@ -21,37 +22,48 @@ media:
 ## 基础
 
 Zeabur 沿用了 Tailwind CSS 默认的配置，包括颜色、字体和图标。Tailiwnd 提供一套高质量的预设，同时也提供修改配置的选项。通过采用 Tailwind，团队可以很快的去进行设计与开发。
+
 ### 颜色
 
 在此之前，Zeabur 拥有一套紫色调灰色色板，该色板是在HSL色彩空间下进行设计。该套色板的问题在于在深色模式下950-800色号很难区分，同时随着亮度逐渐增加颜色变浅，颜色越发偏紫色，在浅色模式下几乎不可用。
 
-![[Pasted image 20241014210430.png]]
+
+<Image src='/assets/zeabur/1.png' alt='' caption='新旧色板'/>
+
 #### 色板
 
 Zeabur 使用 Tailwind 色板来作为主色板，新的色板添加了 Zeabur 品牌颜色与新灰色，分别为 Zeabur violet、Zeabur orangered 与 Zeabur gray。Zeabur violet 一般作为 primary color，orangered 主要作为 destructive color。Zeabur gray 作为中性色一般用于背景与文字，在Zeabur的设计环境中，需要更多的灰色来设计不同的层级，因此我们在950-700、300-50区间进行了更多的采样，来更好的满足设计需求。
 
-![[Pasted image 20241014204418.png]]
+
+
+<Image src='/assets/zeabur/Pasted image 20241014204418.png'/>
 
 新的 Zeabur 颜色色板在[OKLCH色彩空间下进行制作](https://huetone.ardov.me/)。OKLCH能够使相同亮度（Lightness）的颜色肉眼感觉一致。在设计色板时，我们参考了 Tailwind 颜色的亮度排布，使得新添加的颜色亮度分布与Tailwind原本的色板保持了一致。
 
-![[Pasted image 20241014204000.png]]
+
+<Image src='/assets/zeabur/Pasted image 20241014204000.png'/>
+
 #### Design Token
 
 作为一个初创团队，庞大且复杂的设计系统对于快速开发、试错、迭代是一种负担。针对这个问题，我们采用了一种渐进式的设计系统。在颜色系统上，Zeabur主要直接使用例如 slate/100 的 primitive 颜色命名方法，[因为这提供了很高的灵活性](https://tailwindcss.com/docs/customizing-colors#:~:text=Tailwind%20uses%20literal%20color%20names%20(like%20red%2C%20green%2C%20etc.)%20and%20a%20numeric%20scale%20(where%2050%20is%20light%20and%20900%20is%20dark)%20by%20default.%20We%20think%20this%20is%20the%20best%20choice%20for%20most%20projects%2C%20and%20have%20found%20it%20easier%20to%20maintain%20than%20using%20abstract%20names%20like%20primary%20or%20danger.)。我们对于这种方式进行了一层封装，对于常用的背景、描边和文字，我们还使用了相对语意的命名方法。例如 surface/100，同样采用了数值命名的方式，但并没有具体指明 surface 或者 background 的具体场景（例如btn - background - hover），这是为了在灵活性与易管理之间取得平衡。
 
-![[Pasted image 20241014204843.png]]
+
+<Image src='/assets/zeabur/Pasted image 20241014204843.png'/>
 
 现在的语意命名分别有surface、text、stroke。  surface用于背景。text用于文本与图标。stroke用于描边。
 
-![[Pasted image 20241014204913.png]]
+<Image src='/assets/zeabur/Pasted image 20241014204913.png'/>
+
 #### 用法
 
 Zeabur 色板按照 Tailwind 编号，同一色相从50-950由浅入深共11种颜色。灰色由于需要更为详细的分类作为背景色，共有15种颜色。除灰色外，500色号为solid color，饱和度最高，可以用来作为背景色。
+
 ![[Pasted image 20241014205500.png]]
 
 灰色主要作为背景色与文本颜色。surface/100-200一般用于面积比较大的背景。对于层级的表示，一般有两种方式，在100和200之间不断切换，或者是色值逐渐变高。  
+
 ![[Pasted image 20241014205540.png]]
-  
+
 surface/300-500一般用于面积比较小的背景，例如按钮。surface/300一般作为默认状态，400一般作为hover状态，500一般作为active或selective状态。对于不同状态例如hover的切换，一般是上移或下移一个值。例如button是surface/100，hover时变为surface/200。
 
 ![[Pasted image 20241014205518.png]]

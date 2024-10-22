@@ -22,14 +22,33 @@ export default function About() {
     <AnimatePresence>
       <div className="flex justify-between">
         <div>
-          <h1>鑫</h1>
+          <h1>ANXNDSGN</h1>
           <h2 className={`${ebGaramond.className}`}>UX/UI Designer.</h2>
         </div>
       </div>
 
       <Spacer />
       <article className="">
-        <p>你好，我是鑫。现就读于浙江大学软件学院工业设计工程。现在在 Zeabur 作为一名 UX/UI 设计师。</p>
+        <p>
+          你好，我是鑫。现就读于浙江大学软件学院工业设计工程。现在在 Zeabur
+          作为一名 UX/UI 设计师。
+        </p>
+
+        <button
+          className="mt-6 flex items-center py-1 hover:opacity-80"
+          type="button"
+          onClick={() => setIsFold(!isFold)}
+        >
+          <span className="font-semibold">
+            {isFold ? "更多关于我" : "收起"}
+          </span>
+
+          <div
+            className={`ml-1 transition-transform duration-300 ease-in-out ${isFold ? "" : "rotate-180"}`}
+          >
+            <ChevronDown size={16} />
+          </div>
+        </button>
 
         <AnimatePresence>
           {!isFold && (
@@ -43,26 +62,45 @@ export default function About() {
               <FadeIn.Container>
                 <FadeIn.Item>
                   <p className="mt-6">
-                    作为人机界面设计师，我对设计工程、design
-                    ops和设计系统感兴趣，我称之为"面向开发的设计（DfD）"，这类似于工业设计领域的"面向制造的设计（DfM）"。除此之外，我始终将自然、直观的设计作为第一原则，当然还有漂亮的外表。正在学习JavaScript
+                    作为人机界面设计师，我对设计工程、design ops
+                    和设计系统感兴趣，我称之为"面向开发的设计（DfD）"。除此之外，我始终将自然、直观的设计作为第一原则，当然还有漂亮的外表。正在学习JavaScript
                     和 React。
                   </p>
 
-                  <p>
-                    我的设计风格是简约、现代、直观，我喜欢用简单的设计解决复杂的问题。我认为设计是一种解决问题的方法，而不仅仅是美化。我喜欢在设计中融入自然元素，因为我认为自然是最好的设计师。
-                  </p>
+                  <ul>
+                    <p>我的优势：</p>
+                    <li>
+                      - 熟练掌握 Figma，熟悉 Figma 最新特性，4年 Figma
+                      使用经验。
+                    </li>
+                    <li>- 熟悉设计系统，搭建过设计色彩系统与组件库。</li>
+                    <li>- 掌握html、js 和 CSS 前端知识，掌握 React 框架。</li>
+                    <li>- 极强的学习能力。</li>
+                    <li>- 小型团队的合作经验。</li>
+                  </ul>
+
+                  <ul className="">
+                    <p>我可能需要学习的：</p>
+                    <li>- to C 产品的设计经验。</li>
+                    <li>- 大型公司的设计交付流程。</li>
+                    <li>
+                      -
+                      产品思维。在产品、设计、开发的流程中，可能更倾向于开发思维。
+                    </li>
+                    <li>- 其他。</li>
+                  </ul>
+
+                  <button
+                    className="mt-6 rounded-md bg-black-a1 px-4 py-2"
+                    type="button"
+                  >
+                    <a href="cv.pdf">我的简历</a>
+                  </button>
                 </FadeIn.Item>
               </FadeIn.Container>
             </motion.div>
           )}
         </AnimatePresence>
-        <button className="mt-6 flex items-center py-1 hover:opacity-80" type="button" onClick={() => setIsFold(!isFold)}>
-          <span className="font-semibold">{isFold ? "更多关于我" : "收起"}</span>
-
-          <div className={`ml-1 transition-transform duration-300 ease-in-out ${isFold ? "" : "rotate-180"}`}>
-            <ChevronDown size={16} />
-          </div>
-        </button>
       </article>
     </AnimatePresence>
   );

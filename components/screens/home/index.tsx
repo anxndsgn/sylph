@@ -4,7 +4,6 @@ import * as FadeIn from "@/components/motion/staggers/fade";
 import { Posts } from "@/components/posts";
 
 const Spacer = () => <div style={{ marginTop: "24px" }} />;
-const Seperator = () => <div className="border-border border-t" />;
 
 export default function Home() {
   return (
@@ -18,11 +17,13 @@ export default function Home() {
       <FadeIn.Item>
         <Spacer />
         <div className="mb-2 flex flex-col gap-2 text-muted">
-          <h1 className="text-muted">Other Projects</h1>
-          <span className="">下面是我的一些其他项目，包括UI、前端、硬件、工业设计和Logo。</span>
+          <h2 className="text-muted">Other Projects</h2>
+          <span className="">
+            下面是我的一些其他比赛和课程项目，包括
+            UX/UI、前端、硬件、工业设计。我还运营一个小型工作室，为独立开发者们设计
+            App Logo。
+          </span>
         </div>
-
-        <Seperator />
       </FadeIn.Item>
       <FadeIn.Item>
         <Posts category="software" />
