@@ -13,7 +13,13 @@ interface PreviewCardProps {
   summary: string;
 }
 
-export default function PreviewList({ href, title, date, image, summary }: PreviewCardProps) {
+export default function PreviewList({
+  href,
+  title,
+  date,
+  image,
+  summary,
+}: PreviewCardProps) {
   const [hovered, setHovered] = useState(false);
   return (
     <NextViewTransition
@@ -26,8 +32,16 @@ export default function PreviewList({ href, title, date, image, summary }: Previ
       <p className="mt-0 text-muted">{date}</p>
       {hovered &&
         createPortal(
-          <div className="absolute top-10 right-10 z-10 flex hidden w-96 flex-col gap-2 rounded-xl border border-border bg-background p-4 md:block ">
-            {image && <Image src={image || ""} width={200} height={200} alt={""} className="mb-4 w-full rounded-md" />}
+          <div className="absolute top-32 right-10 z-10 flex hidden w-96 flex-col gap-2 rounded-xl border border-border bg-background p-4 md:block ">
+            {image && (
+              <Image
+                src={image || ""}
+                width={200}
+                height={200}
+                alt={""}
+                className="mb-4 w-full rounded-md"
+              />
+            )}
 
             <h3 className="text-black-a10 dark:text-white-a10">{title}</h3>
             {summary && <p className="mt-1 text-muted">{summary}</p>}

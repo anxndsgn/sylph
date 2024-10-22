@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://anxn.me/icon</loc><lastmod>2024-10-22T09:17:52.335Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://anxn.me/software</loc><lastmod>2024-10-22T09:17:52.335Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://anxn.me/hardware</loc><lastmod>2024-10-22T09:17:52.335Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://anxn.me</loc><lastmod>2024-10-22T09:17:52.335Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://anxn.me/logo</loc><lastmod>2024-10-22T09:17:52.335Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://anxn.me/works</loc><lastmod>2024-10-22T09:17:52.335Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://anxn.me/works/works-at-zeabur</loc><lastmod>2024-10-22T09:17:52.335Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://anxn.me/software/basic-writing-and-formatting-syntax</loc><lastmod>2024-10-22T09:17:52.335Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://anxn.me/software/getting-started</loc><lastmod>2024-10-22T09:17:52.335Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://anxn.me/software/project-structure</loc><lastmod>2024-10-22T09:17:52.335Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://anxn.me/hardware/basic-writing-and-formatting-syntax</loc><lastmod>2024-10-22T09:17:52.335Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://anxn.me/hardware/getting-started</loc><lastmod>2024-10-22T09:17:52.335Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://anxn.me/hardware/project-structure</loc><lastmod>2024-10-22T09:17:52.335Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://anxn.me/logo/basic-writing-and-formatting-syntax</loc><lastmod>2024-10-22T09:17:52.335Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://anxn.me/logo/getting-started</loc><lastmod>2024-10-22T09:17:52.335Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://anxn.me/logo/project-structure</loc><lastmod>2024-10-22T09:17:52.335Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://anxn.me/hardware</loc><lastmod>2024-10-22T12:00:36.315Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://anxn.me/icon</loc><lastmod>2024-10-22T12:00:36.316Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://anxn.me/logo</loc><lastmod>2024-10-22T12:00:36.316Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://anxn.me/works</loc><lastmod>2024-10-22T12:00:36.316Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://anxn.me</loc><lastmod>2024-10-22T12:00:36.316Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://anxn.me/software</loc><lastmod>2024-10-22T12:00:36.316Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://anxn.me/software/basic-writing-and-formatting-syntax</loc><lastmod>2024-10-22T12:00:36.316Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://anxn.me/software/getting-started</loc><lastmod>2024-10-22T12:00:36.316Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://anxn.me/software/project-structure</loc><lastmod>2024-10-22T12:00:36.316Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://anxn.me/hardware/basic-writing-and-formatting-syntax</loc><lastmod>2024-10-22T12:00:36.316Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://anxn.me/hardware/getting-started</loc><lastmod>2024-10-22T12:00:36.316Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://anxn.me/hardware/project-structure</loc><lastmod>2024-10-22T12:00:36.316Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://anxn.me/works/works-at-zeabur</loc><lastmod>2024-10-22T12:00:36.316Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://anxn.me/logo/basic-writing-and-formatting-syntax</loc><lastmod>2024-10-22T12:00:36.316Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://anxn.me/logo/getting-started</loc><lastmod>2024-10-22T12:00:36.316Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://anxn.me/logo/project-structure</loc><lastmod>2024-10-22T12:00:36.316Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 </urlset>
