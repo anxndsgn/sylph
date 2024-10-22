@@ -5,7 +5,7 @@ import { OpenGraph } from "@/lib/og";
 import React from "react";
 
 export function generateMetadata() {
-  const title = "Icon";
+  const title = "Logo";
   const image = `${process.env.NEXT_PUBLIC_SITE_URL}api/og?title=${encodeURIComponent(title)}`;
 
   return {
@@ -25,7 +25,7 @@ export default function Page() {
   return (
     <React.Fragment>
       <FadeIn.Item>
-        <Posts category="icon" />
+        <Posts category="logo" />
       </FadeIn.Item>
     </React.Fragment>
   );

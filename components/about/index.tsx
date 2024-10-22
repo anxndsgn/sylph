@@ -29,10 +29,7 @@ export default function About() {
 
       <Spacer />
       <article className="">
-        <p>
-          你好，我是鑫。现就读于浙江大学软件学院工业设计工程。现在在 Zeabur
-          作为一名 UX/UI 设计师。
-        </p>
+        <p>你好，我是鑫。现就读于浙江大学软件学院工业设计工程。现在在 Zeabur 作为一名 UX/UI 设计师。</p>
 
         <AnimatePresence>
           {!isFold && (
@@ -59,18 +56,10 @@ export default function About() {
             </motion.div>
           )}
         </AnimatePresence>
-        <button
-          className="mt-6 flex items-center py-1 hover:opacity-80"
-          type="button"
-          onClick={() => setIsFold(!isFold)}
-        >
-          <span className="font-semibold">
-            {isFold ? "更多关于我" : "收起"}
-          </span>
+        <button className="mt-6 flex items-center py-1 hover:opacity-80" type="button" onClick={() => setIsFold(!isFold)}>
+          <span className="font-semibold">{isFold ? "更多关于我" : "收起"}</span>
 
-          <div
-            className={`ml-1 transition-transform duration-300 ease-in-out ${isFold ? "" : "rotate-180"}`}
-          >
+          <div className={`ml-1 transition-transform duration-300 ease-in-out ${isFold ? "" : "rotate-180"}`}>
             <ChevronDown size={16} />
           </div>
         </button>

@@ -19,9 +19,7 @@ export default function Home() {
         <Spacer />
         <div className="mb-2 flex flex-col gap-2 text-muted">
           <h1 className="text-muted">Other Projects</h1>
-          <span className="">
-            下面是我的一些其他项目，包括UI、前端、硬件、工业设计和icon。
-          </span>
+          <span className="">下面是我的一些其他项目，包括UI、前端、硬件、工业设计和Logo。</span>
         </div>
 
         <Seperator />
@@ -33,7 +31,7 @@ export default function Home() {
         <Posts category="hardware" />
       </FadeIn.Item>
       <FadeIn.Item>
-        <Posts category="icon" />
+        <Posts category="logo" />
       </FadeIn.Item>
       <Spacer />
       <FadeIn.Item>

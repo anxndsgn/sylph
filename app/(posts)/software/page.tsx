@@ -25,7 +25,7 @@ export default function Page() {
   return (
     <React.Fragment>
       <FadeIn.Item>
-        <Posts category="sofware" />
+        <Posts category="software" />
       </FadeIn.Item>
     </React.Fragment>
   );
