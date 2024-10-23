@@ -8,9 +8,9 @@ media:
   image: "/assets/zeabur/Pasted image 20241014213821.png"
 ---
 
-> What is Zeabur?
+> Zeabur 是什么?
 > 
-> Zeabur revolutionizes PaaS (Platform-as-a-Service), enabling developers to deploy services effortlessly. Our platform supports any programming language or framework. Say goodbye to deployment hassles. With Zeabur, bring your coding genius to life swiftly and smoothly.
+> [Zeabur](https://zeabur.com) 是一个帮助开发者能够一键部署任何服务的PaaS 平台，无论你的项目用什么编程语言或框架开发了前端、后端，无论你用了什么数据库，在Zeabur 上都仅需一个按钮就能部署上线生产环境，方便的同时还降低了成本。
 
 
 在 Zeabur，我的工作涵盖了设计系统的建设与维护、用户体验设计（UX/UI）以及品牌宣传物料设计等方面。我还参与了一些前端开发相关的调整工作，确保设计与技术无缝对接。
@@ -23,7 +23,7 @@ media:
 
 Zeabur 沿用了 Tailwind CSS 默认的配置，包括颜色、字体和图标。Tailiwnd 提供一套高质量的预设，同时也提供修改配置的选项。通过采用 Tailwind，团队可以很快的去进行设计与开发。
 
-### Before
+### 颜色
 
 在此之前，Zeabur 拥有一套紫色调灰色色板，该色板是在HSL色彩空间下进行设计。该套色板的问题在于在深色模式下950-800色号很难区分，同时随着亮度逐渐增加颜色变浅，颜色越发偏紫色，在浅色模式下几乎不可用。
 
@@ -107,27 +107,25 @@ Zeabur 采用了 Tailwind 的排版系统，字体为Albert Sans。
 
 Zerabur 的定价策略是基于订阅加用量的模式，即每月$5的订阅费用和根据实际使用的资源费用计算的额外费用。如果资源费用低于$5，则不会额外收费，因为有 $5 的免费用量额度。这是如何通过设计突出传达给用户的关键点。根据用户反馈，现有的定价介绍是许多用户取消订阅的原因之一。
 
-整个页面分为4个 section：订阅卡片、收费策略介绍、预算功能、用量说明。整体的视觉风格采用Zeabur现有的暗色风格，同时在收费策略介绍与用量说明的卡片背景增加了渐变，使得用户在浏览时有一定的节奏感。在新版设计上线后，因为不理解收费方案退订的用户显著减少。
-
-<Image src='/assets/zeabur/Pasted image 20241014214242.png'/>
+新的设计分为4个部分：订阅卡片、收费策略介绍、预算功能、用量说明：
 
 - 订阅卡片展示了Zerabur的三种方案：Serverless、开发者和团队方案。每个卡片介绍了包含的功能，并提供了一键订阅按钮。
 
 - 收费策略部分通过两个费用相加来展示Zerabur的收费规则，同时用户可以通过与背后代表资源用量的图表进行交互，价格会相应变化。
 
-<Image src='/assets/zeabur/录屏2024-10-14 21.39.06.gif'/>
-
 - 预算功能是Zeabur的特点，因此需要在此处进行展示。与竞品平台相比，Zeabur可以设置预算额度，以避免高额账单。
 
 - 初始的用量说明只是简单的图表展示，但由于表内只有四项内容，因此将其做成卡片形式并放大展示。
 
+整体的视觉风格采用Zeabur现有的暗色风格，同时在收费策略介绍与用量说明的卡片背景增加了渐变，使得用户在浏览时有一定的节奏感。在新版设计上线后，因为不理解收费方案退订的用户显著减少。
+
+<Image src='/assets/zeabur/Pasted image 20241014214242.png'/>
+
+<Image src='/assets/zeabur/录屏2024-10-14 21.39.06.gif' caption='用户可以通过与背后代表资源用量的图表进行交互，价格会相应变化'/>
+
 ## Dashboard
 
 Zeabur 的旧 dashboard 比较简单，包括导航栏与项目卡片。项目卡片包含了项目名称、项目描述（可选）、项目图标（可选）、项目包含的各项服务。  主要问题有：
-
-<Image src='/assets/zeabur/Pasted image 20241014214835.png'/>
-
-<Image src='/assets/zeabur/Pasted image 20240603173806.png'/>
 
 - 卡片与背景颜色相近，在白天难以清晰识别；
 - 项目卡片的描述与图标是可选的，且描述高度为三行，但大部分用户不设置，导致大面积空白；
@@ -135,18 +133,22 @@ Zeabur 的旧 dashboard 比较简单，包括导航栏与项目卡片。项目�
 - 创建项目按钮位于卡片末尾，用户若有多个项目需翻至底部；
 - 项目卡片展示的服务多达8个，但大部分用户仅部署1-4个服务，造成空间浪费。
 
-最初尝试在项目卡片上展示更多服务信息，如运行状态、服务预览链接。但服务数量不确定，导致了项目卡片的高度不固定，如果这样设计，就需要采用瀑布式布局，而瀑布流布局更适合内容消费，这对于一款面向开发者的专业工具是不合适的。瀑布流布局不适用于开发者工具。经过团队讨论，决定仅展示与项目相关信息，服务详细信息需进入项目页面查看。保留服务运行状态展示。新的设计包括：
+<Image src='/assets/zeabur/Pasted image 20241014214835.png' caption='旧控制台'/>
+
+<Image src='/assets/zeabur/Pasted image 20240603173806.png'caption='对旧控制台进行头脑风暴'/>
+
+最初尝试在项目卡片上展示更多服务信息，如运行状态、服务预览链接。但服务数量不确定，导致了项目卡片的高度不固定，如果这样设计，就需要采用瀑布式布局，而瀑布流布局更适合内容消费，这对于一款面向开发者的专业工具是不合适的。在迭代后决定仅展示与项目相关信息，服务详细信息需进入项目页面查看。保留服务运行状态展示。新的设计包括：
 
 - 整体页面：我们在导航栏增加了常用链接的入口，同时增加了切换语言的选项。因为之前的语言切换入口太深，导致有国内用户询问是否支持中文。我们还在导航栏底部增加了搜索栏与排序按钮。同时也将新建项目按钮移动到了顶部。最后调整了背景的颜色。
 
 - 项目卡片：我们只选取了与项目有关的信息，包括名称、描述、用量费用、服务器所在地与项目内部署的服务。我们将项目描述只显示一行，这样在不添加项目描述的情况下依旧不会存在太大空白。我们还将服务的图标进行堆叠处理，最多也能显示8个服务图标，但只需要一行。
 
-<Image src='/assets/zeabur/Pasted image 20241014214932.png'/>
-<Image src='/assets/zeabur/Pasted image 20241014214953.png'/>
+<Image src='/assets/zeabur/Pasted image 20241014214932.png'caption='第一次迭代，采用瀑布流样式'/>
+<Image src='/assets/zeabur/Pasted image 20241014214953.png'caption='最终版本'/>
 
 ## Dedicated Server
 
-[Dedicated Server](https://dash.Zeabur.com/servers)是指用户可以将自己的服务器绑定在Zeabur平台，享受 Zeabur 提供的一流开发体验。
+[Dedicated Server](https://dash.Zeabur.com/servers) 是指用户可以将自己的服务器绑定在Zeabur平台，享受 Zeabur 提供的一流开发体验。我负责了整个服务器添加流程和 UI 的设计。
 
 <Image src='/assets/zeabur/Pasted image 20241014221302.png'/>
 <Image src='/assets/zeabur/Pasted image 20241014221339.png'/>
@@ -168,11 +170,9 @@ Zeabur 的旧 dashboard 比较简单，包括导航栏与项目卡片。项目�
 
 Zeabur最开始只支持Github登陆，为了增加邮件登陆的功能，重新设计了登录页。
 
-old：
-<Image src='/assets/zeabur/Pasted image 20241014220440.png'/>
+<Image src='/assets/zeabur/Pasted image 20241014220440.png' caption='旧登录页'/>
 
-new：
-<Image src='/assets/zeabur/Pasted image 20241014215553.png'/>
+<Image src='/assets/zeabur/Pasted image 20241014215553.png' caption='新登录页'/>
 
 ### Paywall
 
@@ -186,16 +186,21 @@ new：
 <Image src='/assets/zeabur/Pasted image 20241014220337.png' caption='旧的部署模窗'/>
 <Image src='/assets/zeabur/Pasted image 20241014222148.png' caption='新的CMDK'/>
 <Image src='/assets/zeabur/Pasted image 20241014222209.png' caption='新的部署模窗'/>
-### 自定义添加Docker服务表单
 
-Zeabur 允许用户自己添加 docker 容器服务。旧的添加 docker 表单太过复杂，输入错误也没有具体的错误反馈。为了解决这个问题，我们首先进行了用户旅程分析，发现了一些问题。为了解决这些问题，我们采用了[渐进式披露](https://www.nngroup.com/articles/progressive-disclosure/)的方法，将多余表单收起，只有需要时才会显示。我们还为相应的错误进行提示、对输入内容进行检查。
+### 自定义添加 Docker 服务表单
+
+Zeabur 允许用户自己添加 docker 容器服务。旧的添加 docker 表单太过复杂，输入错误也没有具体的错误反馈。为了解决这个问题，我们首先进行了用户旅程分析，发现主要问题是：
+
+- 缺少反馈。用户输入错误时，没有具体的错误反馈，导致用户不知道如何解决问题。
+
+- 太多选项。一次性展示太多选项，用户不知道如何选择。
+
+为了解决这些问题，我们采用了[渐进式披露](https://www.nngroup.com/articles/progressive-disclosure/)的方法，将多余表单收起，只有需要时才会显示。我们还为相应的错误进行提示、对输入内容进行检查。
 
 <Image src='/assets/zeabur/Pasted image 20241014223930.png' caption='旧的表单'/>
 <Image src='/assets/zeabur/Pasted image 20241014224048.png' caption='用户旅程分析'/>
 <Image src='/assets/zeabur/Pasted image 20241014224104.png'caption='寻找解决方案'/>
 <Image src='/assets/zeabur/Pasted image 20241014223744.png' caption='新表单设计'/>
-
-### 侧边栏
 
 ### 404 / 502 页
 <Image src='/assets/zeabur/Pasted image 20241014224506.png'/>

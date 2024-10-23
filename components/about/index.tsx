@@ -4,14 +4,7 @@ import * as FadeIn from "@/components/motion/staggers/fade";
 
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
-import { EB_Garamond } from "next/font/google";
 import { useState } from "react";
-
-const ebGaramond = EB_Garamond({
-  subsets: ["latin"],
-  display: "swap",
-  weight: ["400"],
-});
 
 const Spacer = () => <div style={{ marginTop: "24px" }} />;
 

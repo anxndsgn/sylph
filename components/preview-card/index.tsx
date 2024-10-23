@@ -11,6 +11,7 @@ interface PreviewCardProps {
   date: string;
   image: string | null;
   summary: string;
+  tags: string[];
 }
 
 export default function PreviewList({
@@ -19,6 +20,7 @@ export default function PreviewList({
   date,
   image,
   summary,
+  tags,
 }: PreviewCardProps) {
   const [hovered, setHovered] = useState(false);
   return (
@@ -32,7 +34,7 @@ export default function PreviewList({
       <p className="mt-0 text-muted">{date}</p>
       {hovered &&
         createPortal(
-          <div className="fixed top-10 right-10 z-10 md:flex hidden w-96 flex-col gap-2 rounded-xl border border-border bg-background p-4 ">
+          <div className="fixed top-10 right-10 z-10 md:flex hidden w-96 flex-col gap-3 rounded-xl border border-border bg-background p-4 ">
             {image && (
               <Image
                 src={image || ""}
@@ -45,6 +47,15 @@ export default function PreviewList({
 
             <h3 className="text-black-a10 dark:text-white-a10">{title}</h3>
             {summary && <p className="mt-1 text-muted">{summary}</p>}
+            {tags && (
+              <div className="flex flex-wrap gap-2 ">
+                {tags.map((tag) => (
+                  <span className="px-4 py-1 bg-black-a1 dark:bg-white-a1 rounded-md text-muted">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            )}
           </div>,
           document.body,
         )}
