@@ -14,14 +14,7 @@ interface PreviewCardProps {
   tags: string[];
 }
 
-export default function PreviewList({
-  href,
-  title,
-  date,
-  image,
-  summary,
-  tags,
-}: PreviewCardProps) {
+export default function PreviewList({ href, title, date, image, summary, tags }: PreviewCardProps) {
   const [hovered, setHovered] = useState(false);
   return (
     <NextViewTransition
@@ -34,23 +27,15 @@ export default function PreviewList({
       <p className="mt-0 text-muted">{date}</p>
       {hovered &&
         createPortal(
-          <div className="fixed top-10 right-10 z-10 md:flex hidden w-96 flex-col gap-3 rounded-xl border border-border bg-background p-4 ">
-            {image && (
-              <Image
-                src={image || ""}
-                width={200}
-                height={200}
-                alt={""}
-                className="mb-4 w-full rounded-md"
-              />
-            )}
+          <div className="fixed top-10 right-10 z-10 hidden w-96 flex-col gap-3 rounded-xl border border-border bg-background p-4 md:flex ">
+            {image && <Image src={image || ""} width={200} height={200} alt={""} className="mb-4 w-full rounded-md" />}
 
             <h3 className="text-black-a10 dark:text-white-a10">{title}</h3>
             {summary && <p className="mt-1 text-muted">{summary}</p>}
             {tags && (
               <div className="flex flex-wrap gap-2 ">
                 {tags.map((tag) => (
-                  <span className="px-4 py-1 bg-black-a1 dark:bg-white-a1 rounded-md text-muted">
+                  <span className="rounded-md bg-black-a1 px-4 py-1 text-muted dark:bg-white-a1" key={tag}>
                     {tag}
                   </span>
                 ))}
