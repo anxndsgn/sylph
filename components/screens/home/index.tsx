@@ -18,7 +18,10 @@ export default function Home() {
         <Spacer />
         <div className="mb-2 flex flex-col gap-2 text-muted">
           <h2 className="text-muted">Other Projects</h2>
-          <span className="">下面是我的一些其他比赛和课程项目，包括 UX/UI、前端、硬件、工业设计。我还运营一个小型工作室，为独立开发者们设计 App Logo。</span>
+          <span className="">
+            其他比赛和课程项目，包括 UX/UI
+            概念、前端、硬件、工业设计。我还为独立开发者们设计 App 图标和 Logo。
+          </span>
         </div>
       </FadeIn.Item>
       <FadeIn.Item>

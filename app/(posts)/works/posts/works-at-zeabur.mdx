@@ -8,45 +8,40 @@ media:
   image: "/assets/zeabur/Pasted image 20241014213821.png"
 ---
 
-> Zeabur 是什么?
-> 
-> [Zeabur](https://zeabur.com) 是一个帮助开发者能够一键部署任何服务的PaaS 平台，无论你的项目用什么编程语言或框架开发了前端、后端，无论你用了什么数据库，在Zeabur 上都仅需一个按钮就能部署上线生产环境，方便的同时还降低了成本。
+ [Zeabur](https://zeabur.com) 是一个PaaS平台，帮助开发者一键部署任何服务，无论使用什么编程语言、框架或数据库。在 Zeabur，我的工作覆盖了设计系统的构建与维护、用户体验设计（UX/UI）以及品牌宣传物料的设计。
 
-
-在 Zeabur，我的工作涵盖了设计系统的建设与维护、用户体验设计（UX/UI）以及品牌宣传物料设计等方面。我还参与了一些前端开发相关的调整工作，确保设计与技术无缝对接。
 
 # 设计系统
 
+
 ## 颜色
 
-Zeabur 沿用了 Tailwind CSS 默认的配置，包括颜色、字体和图标。Tailiwnd 提供一套高质量的预设，同时也提供修改配置的选项。通过采用 Tailwind，团队可以很快的去进行设计与开发。在此之前，Zeabur 拥有一套紫色调灰色色板，该色板是在HSL色彩空间下进行设计。该套色板的问题在于在深色模式下950-800色号很难区分，同时随着亮度逐渐增加颜色变浅，颜色越发偏紫色，在浅色模式下几乎不可用。
-
-
+Zeabur 采用了 Tailwind CSS 默认的配置，包括颜色、字体和图标。Tailwind 提供了高质量的预设，并允许灵活的自定义修改，帮助我们在设计与开发中快速迭代。
 <Image src='/assets/zeabur/1.png' alt='' caption='新旧灰色色板'/>
 
 ### 新色板
 
-Zeabur 使用 Tailwind 色板来作为主色板，新的色板添加了 Zeabur 品牌颜色与新灰色，分别为 violet、 orangered 与 gray。violet 一般作为 primary color，orangered 主要作为 destructive color。gray 作为中性色一般用于背景与文字，在Zeabur的设计环境中，需要更多的灰色来设计不同的层级，因此我们在950-700、300-50区间进行了更多的采样，来更好的满足设计需求。
+我们基于 Tailwind 的色板，为 Zeabur 引入了品牌色 violet、orangered，以及扩展后的灰色色板。Violet 作为主色，orangered 用于破坏性操作，而灰色被广泛用于背景和文本。为了更好地表现层次感，我们增加了950-700及300-50区间的灰色采样，以满足设计需求。这些颜色的选择为后续的设计系统命名提供了基础。
 
 <Image src='/assets/zeabur/Pasted image 20241014204418.png'/>
 
-新的 Zeabur 颜色色板在[OKLCH色彩空间下进行制作](https://huetone.ardov.me/)。OKLCH能够使相同亮度（Lightness）的颜色肉眼感觉一致。在设计色板时，我们参考了 Tailwind 颜色的亮度排布，使得新添加的颜色亮度分布与Tailwind原本的色板保持了一致。
+我们使用 [OKLCH 色彩空间来设计新色板](https://huetone.ardov.me/)，该色彩空间确保相同亮度的颜色视觉上一致。参考 Tailwind 的亮度分布，我们确保新色板在视觉层面上与原有色板保持一致，从而让用户在界面中感受平滑过渡。
 
 <Image src='/assets/zeabur/Pasted image 20241014204000.png'/>
 
 ### Design Token
 
-作为一个初创团队，庞大且复杂的设计系统对于快速开发、试错、迭代是一种负担。针对这个问题，我们采用了一种渐进式的设计系统。在颜色系统上，Zeabur主要直接使用例如 slate/100 的 primitive 颜色命名方法，[因为这提供了很高的灵活性](https://tailwindcss.com/docs/customizing-colors#:~:text=Tailwind%20uses%20literal%20color%20names%20(like%20red%2C%20green%2C%20etc.)%20and%20a%20numeric%20scale%20(where%2050%20is%20light%20and%20900%20is%20dark)%20by%20default.%20We%20think%20this%20is%20the%20best%20choice%20for%20most%20projects%2C%20and%20have%20found%20it%20easier%20to%20maintain%20than%20using%20abstract%20names%20like%20primary%20or%20danger.)。我们对于这种方式进行了一层封装，对于常用的背景、描边和文字，我们还使用了相对语意的命名方法。例如 surface/100，同样采用了数值命名的方式，但并没有具体指明 surface 或者 background 的具体场景（例如btn - background - hover），这是为了在灵活性与易管理之间取得平衡。
+作为初创团队，复杂的设计系统并不适合快速迭代。因此，我们采用了渐进式设计系统策略。Zeabur 的颜色系统主要沿用 Tailwind 的 primitive 命名方式（如 slate/100），这为设计提供了高度灵活性。同时，我们为常用的背景、描边、文字等元素引入了语义化命名，保持灵活性的同时简化了管理。
 
 <Image src='/assets/zeabur/Pasted image 20241014204843.png'/>
 
-现在的语意命名分别有surface、text、stroke。  surface用于背景。text用于文本与图标。stroke用于描边。
+例如，surface 用于背景，text 用于文本和图标，stroke 用于描边。这种命名方式为设计和开发提供了统一的语言，并保证了设计的可扩展性。
 
-<Image src='/assets/zeabur/Pasted image 20241014204913.png'/>
+<Image src='/assets/zeabur/Pasted image 20241014204913.png' caption='语意化命名'/>
 
 ### 颜色用法
 
-Zeabur 色板按照 Tailwind 编号，同一色相从50-950由浅入深共11种颜色。灰色由于需要更为详细的分类作为背景色，共有15种颜色。除灰色外，500色号为solid color，饱和度最高，可以用来作为背景色。
+Zeabur 的颜色系统按 Tailwind 编号，同一色相从50至950，灰色有更详细的区分用于背景设计。Surface/100-200 常用于大面积背景，500色号则作为solid color，应用于按钮等小面积区域。
 
 <Image src='/assets/zeabur/Pasted image 20241014205500.png'/>
 
@@ -65,21 +60,22 @@ surface/300-500 一般用于面积比较小的背景，例如按钮。surface/30
 
 ## 组件
 
-在 Zeabur，我利用 figma 的最新特性重新设计了一系列组件。正如之前提到的，我们采用了一种渐进式方案。我们在最开始只设计了最基础的组件。
+在 Zeabur，我利用 figma 的最新特性重新设计了一系列组件。正如之前提到的，我们采用了一种渐进式方案。我们在最开始只设计了最基础的组件。在实践中，我们发现最基础的组件有：
+- 按钮
+- Toggle
+- 输入框
+- checkbox
+- radio
 
-<Image src='/assets/zeabur/Pasted image 20241014211356.png'/>
+在遇到非设计系统中的组件时，我们会先尝试用非组件的方式。如果类似组件在之后的设计中频繁使用，我们会将其加入到设计系统中。并随着特性增加、从旧设计切换到新设计的过程中，逐渐增加必要的组件。
 
-并随着特性增加、从旧设计切换到新设计的过程中，逐渐增加必要的组件。
+<Image src='/assets/zeabur/Pasted image 20241014211356.png' caption='基础组件'/>
 
-<Image src='/assets/zeabur/Pasted image 20241014211621.png'/>
+<Image src='/assets/zeabur/Pasted image 20241014211621.png' caption='业务组件'/>
 
 ## 图案
 
-我为 Zeabur 设计了一种新的图案风格——线性描边、立体、轮廓加粗，加以必要的动画，强调Zeabur的科技属性。
-
-工具：Rhino、Ai、AE、Lottie、Figma
-
-具体的工作流程我会先使用 Rhino 进行 3D 建模，Rhino能够到处 SVG 格式，导出之后我会使用Ai、Figma对导出的 SVG 进行必要修改，导入 Figma 后使用 Lottie Files 制作动画导出 GIF / JSON 。
+我为 Zeabur 设计了一种新的图案风格——线性描边、立体、轮廓加粗，加以必要的动画，强调Zeabur的科技属性。我使用Rhino建模，并导出SVG格式进行后期处理，以完成图案设计。
 
 <Image src='/assets/zeabur/录屏2024-10-14 21.28.33.gif'/>
 <Image src='/assets/zeabur/录屏2024-10-14 21.30.15.gif'/>
@@ -94,39 +90,21 @@ surface/300-500 一般用于面积比较小的背景，例如按钮。surface/30
 
 <Image src='/assets/zeabur/Pasted image 20241014213821.png'/>
 
-Zerabur 的定价策略是基于订阅加用量的模式，即每月$5的订阅费用和根据实际使用的资源费用计算的额外费用。如果资源费用低于$5，则不会额外收费，因为有 $5 的免费用量额度。这是如何通过设计突出传达给用户的关键点。根据用户反馈，现有的定价介绍是许多用户取消订阅的原因之一。
+Zeabur 的定价策略基于订阅加用量模式。为了帮助用户更清晰地理解收费逻辑，我重新设计了定价页面，解决了用户因费用不透明而取消订阅的问题。新页面分为四个模块：订阅卡片、收费策略、预算功能、用量说明。
 
-新的设计分为4个部分：订阅卡片、收费策略介绍、预算功能、用量说明：
+新版设计上线后，因误解定价而退订的用户数量显著减少。
 
-- 订阅卡片展示了Zerabur的三种方案：Serverless、开发者和团队方案。每个卡片介绍了包含的功能，并提供了一键订阅按钮。
-
-- 收费策略部分通过两个费用相加来展示Zerabur的收费规则，同时用户可以通过与背后代表资源用量的图表进行交互，价格会相应变化。
-
-- 预算功能是Zeabur的特点，因此需要在此处进行展示。与竞品平台相比，Zeabur可以设置预算额度，以避免高额账单。
-
-- 初始的用量说明只是简单的图表展示，但由于表内只有四项内容，因此将其做成卡片形式并放大展示。
-
-整体的视觉风格采用Zeabur现有的暗色风格，同时在收费策略介绍与用量说明的卡片背景增加了渐变，使得用户在浏览时有一定的节奏感。在新版设计上线后，因为不理解收费方案退订的用户显著减少。
-
-<Image src='/assets/zeabur/Pasted image 20241014214242.png'/>
+<Image src='/assets/zeabur/Pasted image 20241014214242.png' caption='左旧右新'/>
 
 <Image src='/assets/zeabur/录屏2024-10-14 21.39.06.gif' caption='用户可以通过与背后代表资源用量的图表进行交互，价格会相应变化'/>
 
 ## Dashboard
 
-Zeabur 的旧 dashboard 比较简单，包括导航栏与项目卡片。项目卡片包含了项目名称、项目描述（可选）、项目图标（可选）、项目包含的各项服务。  主要问题有：
-
-- 卡片与背景颜色相近，在白天难以清晰识别；
-- 项目卡片的描述与图标是可选的，且描述高度为三行，但大部分用户不设置，导致大面积空白；
-- 缺乏搜索栏等常用功能；
-- 创建项目按钮位于卡片末尾，用户若有多个项目需翻至底部；
-- 项目卡片展示的服务多达8个，但大部分用户仅部署1-4个服务，造成空间浪费。
+旧的 Dashboard 存在多个用户体验问题，如项目卡片信息冗余、卡片与背景颜色对比不明显、创建项目按钮位置不便等。我通过简化项目卡片信息、优化布局并增加常用功能入口，提升了用户的整体体验。新设计有效减少了用户寻找项目和创建新项目的时间。
 
 <Image src='/assets/zeabur/Pasted image 20241014214835.png' caption='旧控制台'/>
 
 <Image src='/assets/zeabur/Pasted image 20240603173806.png'caption='对旧控制台进行头脑风暴'/>
-
-最初尝试在项目卡片上展示更多服务信息，如运行状态、服务预览链接。但服务数量不确定，导致了项目卡片的高度不固定，如果这样设计，就需要采用瀑布式布局，而瀑布流布局更适合内容消费，这对于一款面向开发者的专业工具是不合适的。
 
 在迭代后决定仅展示与项目相关信息，服务详细信息需进入项目页面查看。保留服务运行状态展示。新的设计包括：
 
@@ -140,12 +118,12 @@ Zeabur 的旧 dashboard 比较简单，包括导航栏与项目卡片。项目�
 - 将项目描述只显示一行，这样在不添加项目描述的情况下依旧不会存在太大空白。
 - 将服务的图标进行堆叠处理，最多也能显示8个服务图标，但只需要一行。
 
-<Image src='/assets/zeabur/Pasted image 20241014214932.png'caption='第一次迭代，采用瀑布流样式'/>
+<Image src='/assets/zeabur/Pasted image 20241014214932.png'caption='最初尝试在项目卡片上展示更多服务信息，如运行状态、服务预览链接。但服务数量不确定，导致了项目卡片的高度不固定，而瀑布流布局更适合内容消费。'/>
 <Image src='/assets/zeabur/Pasted image 20241014214953.png'caption='最终版本'/>
 
 ## Dedicated Server
 
-[Dedicated Server](https://dash.Zeabur.com/servers) 是指用户可以将自己的服务器绑定在Zeabur平台，享受 Zeabur 提供的一流开发体验。我负责了整个服务器添加流程和 UI 的设计。
+[Dedicated Server](https://dash.Zeabur.com/servers) 是指用户可以将自己的服务器绑定在Zeabur平台，享受 Zeabur 提供的一流开发体验。
 
 <Image src='/assets/zeabur/Pasted image 20241014221302.png'/>
 <Image src='/assets/zeabur/Pasted image 20241014221339.png'/>
@@ -154,7 +132,7 @@ Zeabur 的旧 dashboard 比较简单，包括导航栏与项目卡片。项目�
 
 ## 浅色模式（未上线）
 
-浅色模式是Zeabur社区呼声最高的需求，但由于之前的色板对于浅色模式几乎不可用，我重新设计了颜色系统。颜色系统完成之后，大大加快了浅色模式的设计速度。
+浅色模式是Zeabur社区呼声最高的需求，在重新设计了颜色系统之后，大大加快了浅色模式的设计速度。
 
 <Image src='/assets/zeabur/Pasted image 20241014225640.png'/>
 <Image src='/assets/zeabur/Pasted image 20241014225704.png'/>
@@ -180,9 +158,9 @@ Zeabur最开始只支持Github登陆，为了增加邮件登陆的功能，重�
 
 为了优化部署代码的体验，我们首先优化了部署面板与相应CMDK模窗的UI，有了更好的扩展性。同时在部署流程上，我们在部署前增加了预览与增加配置环境变量的步骤。对于有配置环境变量需求的用户。
 
-旧的流程是`部署->部署完成->服务上线->增加环境变量->重启服务->服务上线->OK`。
+旧的流程: `部署->部署完成->服务上线->增加环境变量->重启服务->服务上线->OK`
 
-新的流程是`部署->增加变量->部署完成->OK`。
+新的流程: `部署->增加变量->部署完成->OK`
 
 <Image src='/assets/zeabur/Pasted image 20241014220337.png' caption='旧的部署模窗'/>
 <Image src='/assets/zeabur/Pasted image 20241014222148.png' caption='新的CMDK'/>
@@ -196,7 +174,7 @@ Zeabur 允许用户自己添加 docker 容器服务。旧的添加 docker 表单
 
 - 太多选项。一次性展示太多选项，用户不知道如何选择。
 
-为了解决这些问题，我们采用了[渐进式披露](https://www.nngroup.com/articles/progressive-disclosure/)的方法，将多余表单收起，只有需要时才会显示。我们还为相应的错误进行提示、对输入内容进行检查。
+为了解决这些问题，我们采用了[渐进式披露](https://www.nngroup.com/articles/progressive-disclosure/)的方法，将多余表单收起，需要时显示。我们还为相应的错误进行提示、对输入内容进行检查。
 
 <Image src='/assets/zeabur/Pasted image 20241014223930.png' caption='旧的表单'/>
 <Image src='/assets/zeabur/Pasted image 20241014224048.png' caption='用户旅程分析'/>
@@ -225,3 +203,4 @@ Zeabur 允许用户自己添加 docker 容器服务。旧的添加 docker 表单
 ## 海报
 
 <Image src='/assets/zeabur/Pasted image 20241014231236.png'/>
+
