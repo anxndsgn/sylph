@@ -70,7 +70,10 @@ export default function About() {
                     <p>我的优势：</p>
                     <li>- 熟练掌握 Figma，熟悉 Figma 最新特性。</li>
                     <li>- 熟悉设计系统，搭建过设计色彩系统与组件库。</li>
-                    <li>- 掌握html、js 和 CSS 前端知识，掌握 React 框架。</li>
+                    <li>
+                      - 掌握 HTML、JS 和 CSS 前端知识，掌握 React 库和 NextJS
+                      框架。
+                    </li>
                     <li>- 极强的学习能力。</li>
                     {/* <li>- 小型团队的合作经验。</li> */}
                   </ul>
@@ -88,12 +91,12 @@ export default function About() {
                     <li>- 任何事。</li>
                   </ul> */}
 
-                  <button
+                  {/* <button
                     className="mt-6 rounded-md bg-black-a1 px-4 py-2"
                     type="button"
                   >
                     <a href="cv.pdf">我的简历</a>
-                  </button>
+                  </button> */}
                 </FadeIn.Item>
               </FadeIn.Container>
             </motion.div>
