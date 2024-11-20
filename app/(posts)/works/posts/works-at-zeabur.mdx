@@ -8,7 +8,7 @@ media:
   image: "/assets/zeabur/Pasted image 20241014213821.png"
 ---
 
- [Zeabur](https://zeabur.com) 是一个PaaS平台，帮助开发者一键部署任何服务，无论使用什么编程语言、框架或数据库。在 Zeabur，我的工作覆盖了设计系统的构建与维护、用户体验设计（UX/UI）以及品牌宣传物料的设计。
+ [Zeabur](https://zeabur.com) 是一个PaaS平台，帮助开发者一键部署任何服务，无论使用什么编程语言、框架或数据库。在 Zeabur，我的工作覆盖了设计系统的构建与维护、用户体验设计（UX/UI）以及品牌宣传物料的设计，同时还负责简单页面的前端开发。
 
 
 # 设计系统
@@ -123,12 +123,17 @@ Zeabur 的定价策略基于订阅加用量模式。为了帮助用户更清晰�
 
 ## Dedicated Server
 
-[Dedicated Server](https://dash.Zeabur.com/servers) 是指用户可以将自己的服务器绑定在Zeabur平台，享受 Zeabur 提供的一流开发体验。
+[Dedicated Server](https://dash.Zeabur.com/servers) 是指用户可以将自己的服务器绑定在 Zeabur 平台，享受 Zeabur 提供的一流开发体验。
 
-<Image src='/assets/zeabur/Pasted image 20241014221302.png'/>
-<Image src='/assets/zeabur/Pasted image 20241014221339.png'/>
-<Image src='/assets/zeabur/Pasted image 20241014221249.png'/>
-<Image src='/assets/zeabur/Pasted image 20241014221433.png'/>
+<Image src='/assets/zeabur/Pasted image 20241014221302.png' caption='feature 弹窗'/>
+<Image src='/assets/zeabur/Pasted image 20241014221339.png' caption= '添加服务器表单'/>
+<Image src='/assets/zeabur/Pasted image 20241014221249.png'caption= '服务器后台管理页'/>
+<Image src='/assets/zeabur/Pasted image 20241014221433.png' caption= '服务器详情'/>
+
+除去连接自己的服务器，用户还可以在 Zeabur 平台直接购买服务器。我除了负责设计工作，还负责了这部分的前端页面开发工作，后端以及购买服务器的数据接入由 [yuanlin](https://x.com/yuaanlin) 完成。
+
+<Video src='/assets/zeabur/buyvps.mp4'/>
+
 
 ## 浅色模式（未上线）
 
@@ -149,14 +154,28 @@ Zeabur最开始只支持Github登陆，为了增加邮件登陆的功能，重�
 
 <Image src='/assets/zeabur/Pasted image 20241014215553.png' caption='新登录页'/>
 
+### 账单区块
+
+最开始 Zeabur 的账单直接展示了用户的各种消费组成，为了让用户更清晰的了解自己的账单，我对账单内容进行了梳理，重新组织了账单信息的展示方式。
+
+<Image src='/assets/zeabur/old_billing.png' caption='旧账单'/>
+
+新的账单设计分为订阅与用量两部分，与我们定价页中的介绍相同。用户可以通过点击查看详情，查看具体的消费组成。相关的优惠、点数在详情中进行展示。通常情况下，用户不需点击就能够直观了解当月账单费用。
+
+<Video src='/assets/zeabur/new_billing.mp4' caption='新账单'/>
+
+
+
+
 ### Paywall
 
 <Image src='/assets/zeabur/Pasted image 20241014220121.png'/>
 <Image src='/assets/zeabur/Pasted image 20241014220146.png'/>
 
+
 ### CMDK 模窗与服务部署流程
 
-为了优化部署代码的体验，我们首先优化了部署面板与相应CMDK模窗的UI，有了更好的扩展性。同时在部署流程上，我们在部署前增加了预览与增加配置环境变量的步骤。对于有配置环境变量需求的用户。
+为了优化部署代码的体验，我们首先优化了部署面板与相应 CMDK 模窗的 UI，有了更好的扩展性。同时在部署流程上，我们在部署前增加了预览与增加配置环境变量的步骤。对于有配置环境变量需求的用户。
 
 旧的流程: `部署->部署完成->服务上线->增加环境变量->重启服务->服务上线->OK`
 
