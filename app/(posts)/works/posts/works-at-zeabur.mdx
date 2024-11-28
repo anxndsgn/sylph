@@ -61,17 +61,47 @@ surface/300-500 一般用于面积比较小的背景，例如按钮。surface/30
 ## 组件
 
 在 Zeabur，我利用 figma 的最新特性重新设计了一系列组件。正如之前提到的，我们采用了一种渐进式方案。我们在最开始只设计了最基础的组件。在实践中，我们发现最基础的组件有：
-- 按钮
+
+- Button
 - Toggle
-- 输入框
-- checkbox
-- radio
+- Input
+- Checkbox
+- Radio
+- Select
+- Listbox
+- Menu
 
-在遇到非设计系统中的组件时，我们会先尝试用非组件的方式。如果类似组件在之后的设计中频繁使用，我们会将其加入到设计系统中。并随着特性增加、从旧设计切换到新设计的过程中，逐渐增加必要的组件。
 
-<Image src='/assets/zeabur/Pasted image 20241014211356.png' caption='基础组件'/>
+在遇到非设计系统中的组件时，我们会先尝试用非组件的方式。如果类似组件在之后的设计中频繁使用，我们会将其加入到设计系统中。并随着特性增加、从旧设计切换到新设计的过程中，逐渐增加必要的组件。同时，我还负责了组件的开发工作，保证了设计与开发的一致性，包括 Modal、Button、Listbox、Menu 等组件。通过同时进行设计与开发的工作，我们保证了设计系统的一致性，同时也保证了设计系统的可扩展性。
 
-<Image src='/assets/zeabur/Pasted image 20241014211621.png' caption='业务组件'/>
+```jsx
+// 使用 headlessUI 封装的 Modal 组件
+<Modal open={isOpen} onClose={onClose}>
+  <ModalBackdrop />
+  <ModalPanel>
+    <ModalHeader onClose={onClose}>
+      <ModalTitle>Title</ModalTitle>
+      <ModalDescrption>desc</ModalDescrption>
+    </ModalHeader>
+    <ModalContent>
+    {/*You can do whatever you want here*/}
+      <div>content</div>
+    </ModalContent>
+    <ModalFooter>
+      <Button onClick={onClose}>Cancle</Button>
+      <Button onClick={onClose} variant={'primary'}>
+        OK
+      </Button>
+    </ModalFooter>
+  </ModalPanel>
+</Modal>
+```
+
+<Image src='/assets/zeabur/截屏2024-11-29 04.22.51.png' caption='Modal 组件'/>
+
+<Image src='/assets/zeabur/Pasted image 20241014211356.png' caption='部分基础组件'/>
+
+<Image src='/assets/zeabur/Pasted image 20241014211621.png' caption='部分业务组件'/>
 
 ## 图案
 
