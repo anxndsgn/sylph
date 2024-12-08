@@ -64,7 +64,9 @@ media:
 
 ### 设计方案 1.1
 
+[在线原型预览](https://tencentest.anxn.me/proposal1)
 <Image src='/assets/tencent/1.png'/>
+
 
 方案1.1将三个表格展示在同一页面，每个表格顶部放置该状态可用的批量操作按钮（如已启用列表仅显示批量导出）。操作流程为：`滚动到对应列表→选择或全选→操作`
 
@@ -91,9 +93,14 @@ media:
 
 ## 设计方案2
 
+[在线原型预览](https://tencentest.anxn.me/proposal2)
+
 <Image src='/assets/tencent/4.png'/>
+
 设计方案2考虑使用单一表格展示的场景，需要引入数据筛选功能。我们将筛选功能置于顶部，批量操作按钮置于底部。用户操作流程为：`筛选→选择→批量操作`，形成从上到下的自然流程。
+
 <Image src='/assets/tencent/5.png'/>
+
 考虑到批量操作选项会随所选内容变化，我们首先展示每列的可用操作按钮以提示用户。批量操作按钮仅在选择数据时显示，同时展示三个选项并根据选择内容动态禁用不可用选项。
 
 该方案的优势是：
@@ -103,10 +110,11 @@ media:
 
 劣势是：
 
-- 没有明显的缺点
+- 用户可能需要进行多次筛选才能找到目标数据
+- 操作按钮较为分散，可能会增加用户操作成本
 
 ## 设计方案3
-
+[在线原型预览](https://tencentest.anxn.me/proposal3)
 <Image src='/assets/tencent/6.png'/>
 <Image src='/assets/tencent/8.png' caption='低保真图'/>
 
