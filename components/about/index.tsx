@@ -17,7 +17,7 @@ export default function About() {
         <div>
           <h1>ANXNDSGN | 鑫</h1>
           <h2 className={"font-normal text-muted"}>
-            UX/UI 设计师。 杭州，中国。
+            UX/UI 设计师。 深圳，中国。
           </h2>
           <div className="mt-1 flex gap-2 font-normal text-muted">
             <a href="mailto:anxanxx@gmail.com">E-mail</a>
@@ -29,10 +29,9 @@ export default function About() {
       <Spacer />
       <article className="">
         <p>
-          你好，我是鑫。现就读于浙江大学软件学院工业设计工程。现在在 Zeabur
-          作为一名 UX/UI 设计师。
+          你好，我是鑫。现在在腾讯作为交互设计师，之前在 Zeabur 作为一名 Design
+          Engineer。
         </p>
-
         <button
           className="mt-6 flex items-center py-1 hover:opacity-80"
           type="button"
@@ -66,7 +65,7 @@ export default function About() {
                     和 React。
                   </p>
 
-                  <ul>
+                  {/* <ul>
                     <p>我的优势：</p>
                     <li>- 熟练掌握 Figma，熟悉 Figma 最新特性。</li>
                     <li>- 熟悉设计系统，搭建过设计色彩系统与组件库。</li>
@@ -75,8 +74,7 @@ export default function About() {
                       框架。
                     </li>
                     <li>- 极强的学习能力。</li>
-                    {/* <li>- 小型团队的合作经验。</li> */}
-                  </ul>
+                  </ul> */}
 
                   <p>
                     在 UI 设计之外，我还对工业设计，开源硬件，Arduino
